@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web studio 05</title>
+    <title>Web studio 06</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <header class="header">
       <div class="header-container">
         <nav class="nav">
-          <a href="" class="logo"><span>Web</span>Studio</a>
+          <a href="" class="logo"><span class="logo-header-footer">Web</span>Studio</a>
           <ul class="site-nav list">
             <li class="item"><a href="" class="link current">Студія</a></li>
             <li class="item">
@@ -398,7 +398,7 @@
     <footer class="footer">
       <div class="container address-footer">
         <div class="adrress-all">
-          <a href="" class="logo"><span>Web</span>Studio</a>
+          <a href="" class="logo"><span class="logo-header-footer">Web</span>Studio</a>
           <address class="address">
             <ul class="list">
               <li class="item">
@@ -459,15 +459,64 @@
     </footer>
     <!--                                модальное окно -->
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button data-modal-close class="button-modal-close" type="button">
-          <svg class="icon" width="11" height="11">
-            <use href="./images/sprite.svg#Vector"></use>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="button-modal-close" type="button">
+      <svg class="icon" width="11" height="11">
+        <use href="./images/sprite.svg#Vector"></use>
+      </svg>
+    </button>
+    <form class="form" action="">
+      <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
+      <div class="form-field">
+        <label class="form-label" for="name">Ім'я</label>
+        <div class="input-wrap">
+          <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+
+          <svg class="form-icon">
+            <use href="./images/sprite.svg#person" width="18" height="18"></use>
           </svg>
-        </button>
+        </div>
       </div>
-    </div>
+      <div class="form-field">
+        <label class="form-label" for="tel">Телефон</label>
+        <div class="input-wrap">
+          <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
+          <svg class="form-icon">
+            <use href="./images/sprite.svg#phone" width="18" height="18"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="mail">Пошта</label>
+        <div class="input-wrap">
+          <input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
+          <svg class="form-icon">
+            <use href="./images/sprite.svg#letter" width="18" height="18"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-field last-child">
+        <label class="form-label" for="comment">Коментар</label>
+        <textarea class="comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+      </div>
+      <div class="form-policy">
+        <input type="checkbox" name="policy" id="policy" value="true" class="modal-check visually-hidden" />
+
+        <label class="policy" for="policy">
+          <span class="check-policy">
+            <svg class="check-icon" width="16" height="15">
+              <use href="./images/sprite.svg#check"></use>
+            </svg>
+          </span>
+          Погоджуюся з розсилкою та приймаю <a class="link-contract" href="">Умови договору</a></label>
+      </div>
+      <button class="btn-form" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
+
+   
 
     <script src="./js/modal.js"></script>
   </body>
