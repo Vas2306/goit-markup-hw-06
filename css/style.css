@@ -141,7 +141,8 @@ img {
 .auth-nav .link {
   color: var(--color-text);
   fill: var(--color-text);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -219,7 +220,8 @@ img {
   border-radius: 4px;
   border-style: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-hero:hover,
 .btn-hero:focus {
@@ -375,8 +377,8 @@ img {
   background-color: transparent;
   color: var(--color-icon);
 
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-card .team-social-icon {
   fill: currentColor;
@@ -414,7 +416,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   border-radius: 4px;
   color: var(--color-icon);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .icon {
   fill: currentColor;
@@ -449,7 +452,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   text-align: center;
   letter-spacing: inherit;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-grey:hover,
@@ -499,7 +504,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   background: var(--color-text-white);
   box-shadow: inset 0 0 0 1px #eeeeee;
 
-  transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -668,7 +673,114 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
 .footer .link-call:focus {
   background-color: var(--color-acent);
 }
+.subscribe {
+  margin-left: 13px;
+}
 
+.form-email {
+  width: 570px;
+}
+
+.email-field {
+  width: 358px;
+
+  display: block;
+  position: relative;
+}
+
+.email-input {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-text-white);
+}
+
+.form-email .email-label {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 16px;
+}
+
+.footer .subscribe-text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  color: var(--color-text-white);
+}
+
+.email-field:focus-within > .email-label {
+  visibility: hidden;
+}
+
+.form-email .btn-telegram {
+  width: 200px;
+  margin: 0;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--color-acent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-email .btn-telegram:hover {
+  background-color: var(--color-btn-active);
+}
+
+.subscribe .email-position {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-telegram .text {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+}
+
+.btn-telegram .email-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.email-icon .icon-in {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: var(--color-text-white);
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 /* -----------------------------оформляем модальное окно */
 
 .backdrop {
@@ -680,7 +792,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -739,11 +852,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
-
 }
 
 .form-field {
-
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -778,7 +889,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   border-color: var(--color-acent);
 }
 
-.form-input:focus+.form-icon {
+.form-input:focus + .form-icon {
   fill: var(--color-acent);
 }
 
@@ -792,7 +903,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
-
 
   outline: transparent;
   resize: none;
@@ -834,7 +944,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
   fill: transparent;
 }
 
-.modal-check:checked+.policy .check-policy {
+.modal-check:checked + .policy .check-policy {
   background-color: var(--color-acent);
   border: none;
   fill: var(--color-text-white);
@@ -861,7 +971,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
 }
 
 .form .btn-form {
-
   padding: 10px 52px;
   display: block;
   margin: 0 auto;
