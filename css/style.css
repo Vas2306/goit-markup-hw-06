@@ -674,8 +674,6 @@ img {
   margin-left: 13px;
 }
 
-
-
 .email-input {
   width: 358px;
   padding-top: 15px;
@@ -742,17 +740,10 @@ img {
   padding-left: 28px;
 }
 
-.btn-telegram .email-icon {
+.icon-in {
   display: block;
   width: 24px;
   height: 24px;
-}
-
-.email-icon .icon-in {
-  display: block;
-
-  width: 100%;
-  height: 100%;
 
   fill: var(--color-text-white);
 }
@@ -832,9 +823,6 @@ img {
 .form {
   margin-left: auto;
   margin-right: auto;
-
-  /* padding: 40px; */
-
 }
 
 .form-field {
